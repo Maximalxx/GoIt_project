@@ -1,0 +1,128 @@
+.video {
+    background-color: #31d4e7;
+    text-align: center;
+    padding: 60px 1rem;
+
+    @media screen and (min-width: 768px) {
+        padding: 60px 2rem;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding: 70px 2rem 70px 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.video__text_wrapper {
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+        width: 550px;
+        margin: 0 auto 40px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 535px;
+        text-align: left;
+        margin: 0;
+        padding-top: 36px;
+    }
+}
+
+.video__title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #222222;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 768px) {
+        font-size: 28px;
+        line-height: 18px;
+    }
+}
+
+.video__text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    line-height: 24px;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 25px;
+    }
+}
+
+.video__icon_wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 155px;
+    margin: 0 auto;
+
+    @media screen and (min-width: 1200px) {
+        margin: 0;
+    }
+}
+
+.video__icon_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 69px;
+    height: 69px;
+    border-radius: 50%;
+    background-color: #0098cd;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgb(21, 175, 226);
+    }
+}
+
+.video__first_icon {
+    width: 28px;
+    height: 32px;
+}
+
+.video__second_icon {
+    width: 30px;
+    height: 36px;
+}
+
+.video__media {
+    width: 285px;
+    height: 217px;
+    border-radius: 4px;
+
+    @media screen and (min-width: 768px) {
+        width: 500px;
+        height: 307px;
+    }
+}
+
+.section2_wrapper_video {
+    padding: 0 1px;
+    border-radius: 8px;
+    margin-bottom: 60px;
+    width: 285px;
+    outline: none;
+    
+    @media screen and (min-width: 768px) {
+      margin-bottom: 107px;
+      width: 500px;
+    }
+  
+    @media screen and (min-width: 1200px) {
+      width: 570px;
+      margin: 0 auto;
+    }
+  }
