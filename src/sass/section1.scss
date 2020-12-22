@@ -1,0 +1,146 @@
+.features {
+  position: relative;
+  background-color: #fff;
+  text-align: center;
+  padding: 0 1rem;
+
+  @media screen and (min-width: 768px) {
+    min-width: 768px;
+    height: 900px;
+    padding: 0 2rem;
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 1200px;
+  }
+}
+
+.features__container {
+  min-width: 275px;
+  height: 250px;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 120px;
+    margin: 120px 60px 0 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 49px;
+    margin-right: 34px;
+  }
+}
+
+.features__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #330cf4;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Raleway', sans-serif;
+  margin: 55px auto 33px;
+
+  &::after {
+    content: '';
+    width: 60px;
+    height: 1px;
+    display: inline-block;
+    background-color: #babdc1;
+    margin-left: 10px;
+  }
+
+  &::before {
+    content: '';
+    width: 60px;
+    height: 1px;
+    display: inline-block;
+    background-color: #babdc1;
+    margin-right: 10px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 28px;
+
+    &::after {
+        margin-left: 15px;
+    }
+
+    &::before {
+        margin-right: 15px;
+    }
+  }
+}
+
+.features__text {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.features__card_container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.features_section2_phone {
+  display: none;
+}
+
+.features_services_card {
+  width: 290px;
+  justify-content: space-between;
+  display: flex;
+  margin-bottom: 45px;
+
+  @media screen and (min-width: 768px) {
+    margin: 0 30px 90px 30px;
+  }
+}
+
+.features_card_img {
+  width: 38px;
+  height: 32px;
+  margin-right: 25px;
+}
+
+.features_card_text_wraper {
+  width: 269px;
+  justify-content: space-between;
+}
+
+.features_card_title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  text-align-last: left;
+  color: #282528;
+  margin: 0 0 20px 0;
+
+  @media screen and (min-width: 768px) {
+    font-weight: 700;
+  }
+}
+
+.features_card_text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #282528;
+  font-family: 'Open Sans', sans-serif;
+  text-align: left;
+}
+
+.features_phone_key_fetures {
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    right: 50%;
+    top: 200px;
+    width: 400px;
+    height: auto;
+    transform: translateX(50%);
+    display: block;
+  }
+}
