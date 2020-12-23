@@ -1,0 +1,377 @@
+.header__introduction {
+  background-image: url('../images/header_background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 20px;
+  padding-bottom: 81px;
+  position: relative;
+  overflow-x: hidden;
+
+  @media screen and (min-width: 768px) {
+    overflow-x: visible;
+    padding-bottom: 168px;
+  }
+}
+
+.header__header {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Raleway', sans-serif;
+  padding: 0 0 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  min-width: 321px;
+  height: 74px;
+  background-color: #fff;
+
+  @media screen and (min-width: 768px) {
+    background-color: #fff;
+    margin-bottom: 156px;
+    min-width: 768px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 1200px;
+    margin-bottom: 180px;
+  }
+}
+
+.header__logo {
+  margin: 0;
+
+  @media screen and (min-width: 768px) {
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+  }
+}
+
+.header__logo_link {
+  cursor: pointer;
+  color: #330cf4;
+  font-size: 26px;
+  font-weight: 700;
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+
+  @media screen and (min-width: 768px) {
+    font-size: 29px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+  }
+}
+
+.header__burger_menu {
+  position: relative;
+  padding-right: 20px;
+
+  @media screen and (min-width: 768px) {
+    position: static;
+    width: 525px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 585px;
+  }
+}
+
+.header__burger_btn {
+  font-size: 30px;
+  color: #000;
+
+  &:hover {
+    color: #333333;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.header__burger_btn:hover + .header__menu_list {
+  display: block;
+  right: 0px;
+}
+
+.header__menu_item_link {
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  color: #7e7c7e;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &:hover {
+    color: #282528;
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 30px;
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    border-bottom: 2rem;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.header__menu_item {
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.header__menu_list {
+  position: absolute;
+  top: 99%;
+  right: -768px;
+  min-width: 321px;
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+  border-top: 1px solid;
+  color: #787878;
+  transition: 0.7s linear;
+  list-style: none;
+
+  @media screen and (min-width: 375px) {
+    min-width: 375px;
+  }
+
+  @media screen and (min-width: 425px) {
+    min-width: 425px;
+  }
+
+  @media screen and (min-width: 768px) {
+    transition: 0s linear;
+    display: flex;
+    justify-content: space-between;
+    position: static;
+    width: 525px;
+    background-color: #fff;
+    text-align: center;
+    padding-right: 30px;
+    border: none;
+    margin: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    position: static;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 585px;
+  }
+}
+
+.header__welcome {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.header__welcome_subtite {
+  font-family: 'Kaushan Script', cursive;
+  font-weight: 400;
+  font-size: 24px;
+  color: fff;
+  margin-bottom: 23px;
+  color: #fff;
+
+  @media screen and (min-width: 768px) {
+    font-size: 60px;
+    margin-bottom: 66px;
+  }
+}
+
+.header__welcome_title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  text-transform: uppercase;
+  margin-bottom: 36px;
+  color: #fff;
+
+  &::after {
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #fff;
+    margin: 39px auto 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 120px;
+    margin-bottom: 50px;
+
+    &::after {
+      margin: 71px auto;
+    }
+  }
+}
+
+.header__welcome_btn {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  border: 3px solid #fff;
+  background-color: transparent;
+  margin-bottom: 158px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 210px;
+    font-size: 14px;
+  }
+}
+
+.header__introduction_title {
+  margin-top: 92px;
+  font-size: 24px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+
+  @media screen and (min-width: 768px) {
+    font-size: 42px;
+    margin-top: 0;
+    padding: 0 2rem 0 2rem;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 47px;
+    margin-left: 30px;
+  }
+}
+
+.header__subtitle {
+  margin-top: 20px;
+  font-size: 16px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: left;
+  color: #fff;
+  padding-bottom: 30px;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+    padding: 0 2rem 0 2rem;
+    margin-bottom: 50px;
+    margin-top: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 22px;
+    margin-left: 30px;
+  }
+}
+
+.header__card_subtitle {
+  font-size: 20px;
+  color: #fff;
+}
+
+.header__span_navigation {
+  font-size: 32px;
+  color: #fff;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.header__last_button {
+  background-color: #330cf4;
+  padding: 15px 25px;
+  border-radius: 5px;
+  display: flex;
+  margin: 0 auto;
+  width: 219px;
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+
+  @media screen and (min-width: 768px) {
+    margin: 0 0 0 65px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin: 0 0 0 95px;
+  }
+}
+
+.header__button_icon {
+  padding-right: 19px;
+  width: 54px;
+  height: auto;
+}
+
+.header__card_phone {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -110px;
+    width: 300px;
+    height: auto;
+    margin-right: 55px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 382px;
+    bottom: -125px;
+    right: 60px;
+  }
+}
+
+.header__list {
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 80px;
+    padding: 0 2rem 0 2rem;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 90px;
+    margin-left: 30px;
+    width: 320px;
+  }
+}
+
+.header__list_item {
+  list-style: '>' outside;
+  padding-left: 10px;
+  border: 0px;
+  font-size: 18px;
+  color: #fff;
+  margin-top: 15px;
+  margin-left: 25px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-left: 15px;
+  }
+}
