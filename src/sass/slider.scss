@@ -1,0 +1,268 @@
+@import 'variables.scss';
+
+.slider {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.SliderWrapper {
+}
+
+.SliderTitle {
+  color: $MainColor;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18pt;
+  font-weight: bold;
+  width: 305px;
+  margin: 15px auto 51px;
+  line-height: 25px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    width: auto;
+    margin: 0 auto 65px;
+    justify-content: center;
+    align-items: center;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 61px;
+      height: 1px;
+      margin-right: 25px;
+      background-color: #535b64;
+    }
+
+    &::after {
+      content: '';
+      display: inline-block;
+      width: 61px;
+      height: 1px;
+      margin-left: 25px;
+      background-color: #535b64;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 28pt;
+  }
+}
+
+.SliderTitleBA {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-right: 8px;
+}
+
+.SliderTitleBA::before {
+  content: '';
+  display: inline-block;
+  width: 61px;
+  height: 1px;
+  background-color: #535b64;
+
+  @media screen and (min-width: 768px) {
+    content: unset;
+  }
+}
+
+.SliderTitleBA::after {
+  content: '';
+  display: inline-block;
+  width: 61px;
+  height: 1px;
+  background-color: #535b64;
+
+  @media screen and (min-width: 768px) {
+    content: unset;
+  }
+}
+
+#slider {
+  position: relative;
+  text-align: center;
+  top: 10px;
+}
+
+#slider {
+  margin: 0 auto;
+}
+
+#slides article {
+  width: 20%;
+  float: left;
+}
+
+#slides .image {
+  width: 500%;
+  line-height: 0;
+}
+
+#overflow {
+  width: 100%;
+  overflow: hidden;
+}
+
+article img {
+  width: 100%;
+}
+
+#desktop:checked ~ #slider {
+  max-width: 960px;
+}
+
+label,
+a {
+  cursor: pointer;
+}
+
+.slider__form input {
+  display: none;
+}
+
+#switch1:checked ~ #slides .image {
+  margin-left: 0;
+}
+
+#switch2:checked ~ #slides .image {
+  margin-left: -100%;
+}
+
+#switch3:checked ~ #slides .image {
+  margin-left: -200%;
+}
+
+#switch4:checked ~ #slides .image {
+  margin-left: -300%;
+}
+
+#switch5:checked ~ #slides .image {
+  margin-left: -400%;
+}
+
+#active label {
+  border-radius: 10px;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: #bbb;
+
+  @media screen and (min-width: 1440px) {
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+  }
+}
+
+#active {
+  margin: 23% 0 0;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    margin: 50px 0 0;
+  }
+}
+
+#active label:hover {
+  background: $BackgroundColor;
+  border-color: #777;
+}
+
+#switch1:checked ~ #active label:nth-child(1),
+#switch2:checked ~ #active label:nth-child(2),
+#switch3:checked ~ #active label:nth-child(3),
+#switch4:checked ~ #active label:nth-child(4),
+#switch5:checked ~ #active label:nth-child(5) {
+  background: $MainColor;
+  border-color: #777;
+}
+
+#slides .image {
+  transition: all 800ms cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.slider__form {
+  width: 219px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    width: 590px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 960px;
+  }
+}
+
+.slider__img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+
+.slider__title {
+  font-size: 18pt;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  text-transform: capitalize;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  margin-bottom: 9px;
+
+  @media screen and (min-width: 1440px) {
+    font-size: 28pt;
+  }
+}
+
+.slider__subtitle {
+  font-size: 13px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  text-transform: capitalize;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 69px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 118px;
+    font-size: 18pt;
+  }
+}
+
+.slider__text {
+  height: 200px;
+  width: 212px;
+  line-height: 20px;
+  margin: 0 auto;
+  background-image: url(../images/“@1X.png);
+  background-repeat: no-repeat;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+
+  @media screen and (min-width: 768px) {
+    width: 590px;
+    overflow: unset;
+    text-overflow: unset;
+    height: unset;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 960px;
+    font-size: 18pt;
+    line-height: 30px;
+  }
+}
+
+.slider__text:hover {
+  height: auto;
+  overflow: unset;
+  text-overflow: unset;
+}
