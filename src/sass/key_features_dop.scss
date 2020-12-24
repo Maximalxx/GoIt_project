@@ -1,0 +1,206 @@
+@import 'variables.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    outline: none;
+}
+
+.section_features {
+    background-color: #fff;
+    background-size: cover;
+}
+
+.section_features__wrapper {
+    padding: 60px 1rem 58px 1rem;
+    text-align: center;
+    margin: 0 auto;
+
+    @media screen and (min-width: 768px) {
+        padding: 60px 2rem 138px 2rem;
+    }
+}
+
+.section_features__wrapper__text {
+    display: flex;
+    justify-content: space-between;
+    width: 285px;
+    margin: 0 auto 35px auto;
+
+    @media screen and (min-width: 768px) {
+        width: 370px;
+        margin: 0 auto 66px auto;
+        align-items: center;
+    }
+}
+
+.before--section_features__wrapper__text__title {
+    background-color: #666666;
+    width: 60px;
+    height: 1pt;
+    content: '';
+    display: block;
+    margin-top: 11px;
+}
+
+.section_features__wrapper__text__title {
+    font-family: 'Texturina', serif;
+    font-weight: 800;
+    font-size: 18px;
+    color: $MainColor;
+    text-transform: uppercase;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+        font-size: 28px;
+    }
+}
+
+.after--section_features__wrapper__text__title {
+    background-color: #666666;
+    width: 60px;
+    height: 1pt;
+    content: '';
+    display: block;
+    margin-top: 11px;
+}
+
+.section_features__wrapper__text__text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: $MainTextColor;
+    padding: 0 35px 0 35px;
+    margin-bottom: 42px;
+    line-height: 1.5;
+
+    @media screen and (min-width: 768px) {
+        font-size: 18px;
+        padding: 0 70px 0 70px;
+        margin-bottom: 62px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 159px;
+        padding: 0 250px 0 250px;
+        line-height: 1.5;
+    }
+}
+
+.section_features__wrapper__card {
+    margin: 0 auto;
+
+    @media screen and (min-width: 768px) {
+        width: 720px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1050px;
+        position: relative;
+    }
+}
+
+.section_features__card {
+    width: 269px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px 38px 30px;
+
+    &:nth-child(5) {
+        margin-bottom: 0;
+    }
+
+    &:nth-child(6) {
+        margin-bottom: 0;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 300px;
+    }
+}
+
+.section_features__card--1 {
+    @media screen and (min-width: 768px) {
+        order: 1;
+    }
+}
+
+.section_features__card--2 {
+    @media screen and (min-width: 768px) {
+        order: 2;
+    }
+}
+
+.section_features__card--3 {
+    @media screen and (min-width: 768px) {
+        order: 3;
+    }
+}
+
+.section_features__card--4 {
+    @media screen and (min-width: 768px) {
+        order: 4;
+    }
+}
+
+.section_features__card--5 {
+    @media screen and (min-width: 768px) {
+        order: 5;
+    }
+}
+
+.section_features__card--6 {
+    @media screen and (min-width: 768px) {
+        order: 6;
+    }
+}
+
+.section_features__card__img {
+    width: 30px;
+    height: 30px;
+}
+
+.section_features__card__wrapper__title {
+    width: 210px;
+
+    @media screen and (min-width: 768px) {
+        width: 250px;
+    }
+}
+
+.section_features__card__title {
+    font-family: 'Texturina', serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: $MainTextColor;
+    margin-bottom: 18px;
+    text-align: left;
+}
+
+.section_features__card__text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: $MainTextColor;
+    line-height: 1.8;
+    text-align: left;
+}
+
+.section_features__card__phone-img {
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+        display: block;
+        width: 428px;
+        height: 728px;
+        background-image: url(../images/1200_phone.png);
+        position: absolute;
+        top: -92px;
+        right: 320px;
+        left: 320px;
+    }
+}
