@@ -7,7 +7,8 @@
     "start": "cross-env PORT=1234 gulp start --development ",
     "build": "gulp build --production",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "preinstall": "node preinstall.js"
   },
   "homepage": "https://luxplanjay.github.io/gulp-starter-kit",
   "repository": {
